@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_elements_post_preview_items",
+  "info": {
+    "displayName": "Post Preview Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "postUrl": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "isNewTab": {
+      "type": "boolean",
+      "default": false
+    },
+    "company": {
+      "type": "string"
+    }
+  }
+}

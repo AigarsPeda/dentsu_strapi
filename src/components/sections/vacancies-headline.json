@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_sections_vacancies_headlines",
+  "info": {
+    "displayName": "Vacancies headline"
+  },
+  "options": {},
+  "attributes": {
+    "mainHeadline": {
+      "type": "text",
+      "required": true
+    },
+    "headline": {
+      "type": "text",
+      "required": true
+    },
+    "headline2": {
+      "type": "text"
+    },
+    "headline3": {
+      "type": "text"
+    }
+  }
+}

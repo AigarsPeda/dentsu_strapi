@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_sections_contact_uses",
+  "info": {
+    "displayName": "Contact us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "displayName": "Employee",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.employee"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isContactUsButton": {
+      "type": "boolean",
+      "default": true
+    },
+    "contactEmail": {
+      "type": "string"
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": false
+    },
+    "redirectUrl": {
+      "type": "string"
+    }
+  }
+}

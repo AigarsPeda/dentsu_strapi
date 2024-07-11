@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_post_images",
+  "info": {
+    "displayName": "Post image"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

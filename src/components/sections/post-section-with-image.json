@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_post_section_with_images",
+  "info": {
+    "displayName": "Post section with image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "displayName": "test",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.test"
+    }
+  }
+}

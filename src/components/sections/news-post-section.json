@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_news_post_sections",
+  "info": {
+    "displayName": "News post section"
+  },
+  "options": {},
+  "attributes": {
+    "newsPost": {
+      "displayName": "News post",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.news-post"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_client_sections",
+  "info": {
+    "displayName": "Client section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feature": {
+      "displayName": "Client",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.client"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

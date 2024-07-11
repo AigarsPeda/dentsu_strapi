@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_services_headline_with_images",
+  "info": {
+    "displayName": "Services Headline With Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "isParallax": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}

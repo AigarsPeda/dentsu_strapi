@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_elements_tests",
+  "info": {
+    "displayName": "post with image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "pictureOnRight": {
+      "type": "boolean",
+      "default": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

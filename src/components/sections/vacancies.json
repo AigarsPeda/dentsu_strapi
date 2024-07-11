@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_sections_vacancies",
+  "info": {
+    "displayName": "Vacancies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "vacancies": {
+      "displayName": "Vacancies",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.vacancies"
+    }
+  }
+}

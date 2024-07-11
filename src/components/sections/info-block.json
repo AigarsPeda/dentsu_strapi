@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_info_blocks",
+  "info": {
+    "displayName": "Info Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "description_2": {
+      "type": "text"
+    },
+    "description_3": {
+      "type": "text"
+    }
+  }
+}

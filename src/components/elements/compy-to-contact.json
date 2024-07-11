@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_elements_compy_to_contacts",
+  "info": {
+    "displayName": "compyToContact"
+  },
+  "options": {},
+  "attributes": {
+    "companyTitle": {
+      "type": "string"
+    }
+  }
+}

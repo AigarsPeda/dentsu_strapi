@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_feedbacks",
+  "info": {
+    "displayName": "feedback",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "feedback": {
+      "type": "text",
+      "required": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string"
+    },
+    "company": {
+      "type": "string"
+    },
+    "participatingCompany": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_posts",
+  "info": {
+    "displayName": "Post"
+  },
+  "options": {},
+  "attributes": {
+    "post": {
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

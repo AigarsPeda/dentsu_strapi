@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_page_titles",
+  "info": {
+    "displayName": "Page Title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    }
+  }
+}

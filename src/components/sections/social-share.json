@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_social_shares",
+  "info": {
+    "displayName": "Social share",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "facebook": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "linkedin": {
+      "type": "boolean",
+      "default": true
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

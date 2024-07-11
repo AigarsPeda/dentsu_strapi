@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_news_post_titles",
+  "info": {
+    "displayName": "News post title"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_elements_news_posts",
+  "info": {
+    "displayName": "newsPost",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "url": {
+      "type": "string"
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

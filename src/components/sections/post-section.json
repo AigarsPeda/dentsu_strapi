@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_post_sections",
+  "info": {
+    "displayName": "Post section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "post": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.post-preview-item"
+    }
+  }
+}

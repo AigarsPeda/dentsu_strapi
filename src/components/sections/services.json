@@ -1,0 +1,54 @@
+{
+  "collectionName": "components_sections_services",
+  "info": {
+    "displayName": "Services",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "services": {
+      "displayName": "Service",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.service"
+    },
+    "pictureOnRight": {
+      "type": "boolean",
+      "default": false
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "fontColor": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.font-color"
+    },
+    "mobLogo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "isDarkOverlay": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

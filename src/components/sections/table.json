@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_tables",
+  "info": {
+    "displayName": "table"
+  },
+  "options": {},
+  "attributes": {
+    "tableMarkdown": {
+      "type": "richtext"
+    }
+  }
+}

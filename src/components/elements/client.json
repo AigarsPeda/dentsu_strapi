@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_elements_clients",
+  "info": {
+    "displayName": "Client",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "isNewTab": {
+      "type": "boolean",
+      "default": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "participatingCompany": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_sections_logos_sections",
+  "info": {
+    "displayName": "Logos section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "company": {
+      "displayName": "testing",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.testing"
+    },
+    "showInMobile": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}

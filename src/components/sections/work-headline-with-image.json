@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_sections_work_headline_with_images",
+  "info": {
+    "displayName": "Post Headline With Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headline": {
+      "type": "string",
+      "required": true
+    },
+    "picture": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

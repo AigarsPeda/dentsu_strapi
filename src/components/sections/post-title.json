@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_sections_post_titles",
+  "info": {
+    "displayName": "PostTitle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

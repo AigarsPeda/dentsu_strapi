@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_vacancies",
+  "info": {
+    "displayName": "Vacancies",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "vacancyName": {
+      "type": "string",
+      "required": true
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": true
+    },
+    "vacancyDescription": {
+      "type": "blocks",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

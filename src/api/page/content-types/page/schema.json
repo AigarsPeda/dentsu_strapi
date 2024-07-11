@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page",
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "shortName": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "contentSections": {
+      "type": "dynamiczone",
+      "components": [
+        "sections.rich-text",
+        "sections.hero-large-section",
+        "sections.info-block",
+        "sections.info-block-with-image",
+        "sections.client-section",
+        "sections.logos-section",
+        "sections.contact-us",
+        "sections.page-title",
+        "sections.post-section",
+        "sections.customer-feedback",
+        "sections.work-headline-with-image",
+        "sections.post-section-with-image",
+        "sections.post-statistic-with-image",
+        "sections.image-carousel",
+        "sections.services-headline-with-image",
+        "sections.services",
+        "sections.news-post-section",
+        "sections.news-post-title",
+        "sections.post-image",
+        "sections.post",
+        "sections.table",
+        "sections.social-share",
+        "sections.contacts",
+        "sections.full-width-image",
+        "sections.vacancies-headline",
+        "sections.vacancies",
+        "sections.post-title"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "slug": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string",
+      "regex": "^$|^[a-zA-Z/-]+$"
+    },
+    "heading": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "shared.seo"
+    }
+  }
+}

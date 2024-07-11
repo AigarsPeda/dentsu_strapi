@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_some_things",
+  "info": {
+    "displayName": "Statistic With Image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "statisticOnRight": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

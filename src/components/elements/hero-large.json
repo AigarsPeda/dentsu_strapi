@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_elements_hero_larges",
+  "info": {
+    "displayName": "Hero Large"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "img": {
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_employees",
+  "info": {
+    "displayName": "Employee",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "media": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

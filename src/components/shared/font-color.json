@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_font_colors",
+  "info": {
+    "displayName": "font color"
+  },
+  "options": {},
+  "attributes": {
+    "fontColor": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    }
+  }
+}

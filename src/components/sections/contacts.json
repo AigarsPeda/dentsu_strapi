@@ -1,0 +1,78 @@
+{
+  "collectionName": "components_sections_contacts",
+  "info": {
+    "displayName": "contacts",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "workingTime": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "string",
+      "required": true
+    },
+    "leadFormEmail": {
+      "type": "string",
+      "required": true
+    },
+    "companyToContact": {
+      "displayName": "compyToContact",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.compy-to-contact"
+    },
+    "formFields": {
+      "displayName": "formFields",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.form-fields"
+    },
+    "googleIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "wazeIcon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "buttonTitle": {
+      "type": "string",
+      "required": true
+    },
+    "privacyCookiesPolicy": {
+      "type": "string",
+      "required": true
+    },
+    "agreementToReceiveInfo": {
+      "type": "string",
+      "required": true
+    },
+    "contactEmail": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
