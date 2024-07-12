@@ -463,6 +463,7 @@ export interface SectionsContacts extends Schema.Component {
     privacyCookiesPolicy: Attribute.String & Attribute.Required;
     agreementToReceiveInfo: Attribute.String & Attribute.Required;
     contactEmail: Attribute.String & Attribute.Required;
+    navigationAddress: Attribute.String & Attribute.Required;
   };
 }
 

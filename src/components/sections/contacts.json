@@ -73,6 +73,10 @@
     "contactEmail": {
       "type": "string",
       "required": true
+    },
+    "navigationAddress": {
+      "type": "string",
+      "required": true
     }
   }
 }
