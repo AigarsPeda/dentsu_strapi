@@ -10,7 +10,7 @@
   "scripts": {
     "build": "strapi build",
     "dev": "strapi develop",
-    "export": "strapi export",
+    "export": "strapi export -f seed-data --no-encrypt",
     "import": "strapi import -f seed-data.tar.gz",
     "start": "strapi start",
     "strapi": "strapi"
