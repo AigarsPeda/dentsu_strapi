@@ -533,7 +533,7 @@ export interface SectionsInfoBlock extends Schema.Component {
     description: '';
   };
   attributes: {
-    title: Attribute.String & Attribute.Required;
+    title: Attribute.String;
     description: Attribute.Text & Attribute.Required;
     description_2: Attribute.Text;
     description_3: Attribute.Text;
