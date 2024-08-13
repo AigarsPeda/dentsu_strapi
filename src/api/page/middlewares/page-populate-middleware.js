@@ -79,6 +79,9 @@ const populate = {
           media: {
             fields: ["url", "alternativeText", "caption", "width", "height"],
           },
+          thumbnail: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
         },
       },
       newsPost: {

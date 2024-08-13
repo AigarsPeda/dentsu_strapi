@@ -9,6 +9,7 @@ export interface ElementsCarouselMedia extends Schema.Component {
   attributes: {
     media: Attribute.Media<'images' | 'videos', true>;
     url: Attribute.String;
+    thumbnail: Attribute.Media<'images'>;
   };
 }
 
