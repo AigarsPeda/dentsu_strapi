@@ -69,7 +69,7 @@
         }
       },
       "type": "string",
-      "regex": "^$|^[a-zA-Z/-]+$"
+      "regex": "^$|^[a-zA-Z/_-]+$"
     },
     "heading": {
       "pluginOptions": {
