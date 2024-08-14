@@ -16,6 +16,9 @@ const populate = {
       image: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },
+      file: {
+        fields: ["url"],
+      },
       logo: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },

@@ -585,6 +585,17 @@ export interface SectionsPageTitle extends Schema.Component {
   };
 }
 
+export interface SectionsPdf extends Schema.Component {
+  collectionName: 'components_sections_pdfs';
+  info: {
+    displayName: 'pdf';
+    description: '';
+  };
+  attributes: {
+    file: Attribute.Media<'files'> & Attribute.Required;
+  };
+}
+
 export interface SectionsPostImage extends Schema.Component {
   collectionName: 'components_sections_post_images';
   info: {
@@ -882,6 +893,7 @@ declare module '@strapi/types' {
       'sections.news-post-section': SectionsNewsPostSection;
       'sections.news-post-title': SectionsNewsPostTitle;
       'sections.page-title': SectionsPageTitle;
+      'sections.pdf': SectionsPdf;
       'sections.post-image': SectionsPostImage;
       'sections.post-section-with-image': SectionsPostSectionWithImage;
       'sections.post-section': SectionsPostSection;

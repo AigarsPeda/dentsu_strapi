@@ -489,7 +489,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'sections.full-width-image',
         'sections.vacancies-headline',
         'sections.vacancies',
-        'sections.post-title'
+        'sections.post-title',
+        'sections.pdf'
       ]
     > &
       Attribute.SetPluginOptions<{

@@ -54,7 +54,8 @@
         "sections.full-width-image",
         "sections.vacancies-headline",
         "sections.vacancies",
-        "sections.post-title"
+        "sections.post-title",
+        "sections.pdf"
       ],
       "pluginOptions": {
         "i18n": {
