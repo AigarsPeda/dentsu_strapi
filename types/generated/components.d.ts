@@ -45,7 +45,7 @@ export interface ElementsEmployee extends Schema.Component {
   };
   attributes: {
     position: Attribute.String & Attribute.Required;
-    email: Attribute.String & Attribute.Required;
+    email: Attribute.String;
     media: Attribute.Media<'images'> & Attribute.Required;
     name: Attribute.String;
   };
@@ -552,6 +552,7 @@ export interface SectionsLogosSection extends Schema.Component {
     showInMobile: Attribute.Boolean &
       Attribute.Required &
       Attribute.DefaultTo<true>;
+    autoSwitch: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

@@ -16,6 +16,10 @@
       "type": "boolean",
       "default": true,
       "required": true
+    },
+    "autoSwitch": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
