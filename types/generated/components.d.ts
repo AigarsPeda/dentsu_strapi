@@ -553,6 +553,7 @@ export interface SectionsLogosSection extends Schema.Component {
       Attribute.Required &
       Attribute.DefaultTo<true>;
     autoSwitch: Attribute.Boolean & Attribute.DefaultTo<false>;
+    bottomPadding: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

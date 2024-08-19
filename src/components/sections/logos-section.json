@@ -20,6 +20,10 @@
     "autoSwitch": {
       "type": "boolean",
       "default": false
+    },
+    "bottomPadding": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
