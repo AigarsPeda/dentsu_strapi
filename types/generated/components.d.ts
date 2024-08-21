@@ -639,6 +639,7 @@ export interface SectionsPostStatisticWithImage extends Schema.Component {
   attributes: {
     feature: Attribute.Component<'elements.some-thing'>;
     statistic: Attribute.Component<'elements.statistic', true>;
+    overlay: Attribute.Integer;
   };
 }
 
