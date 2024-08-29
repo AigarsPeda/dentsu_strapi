@@ -37,6 +37,17 @@ export interface ElementsCompyToContact extends Schema.Component {
   };
 }
 
+export interface ElementsDepartment extends Schema.Component {
+  collectionName: 'components_elements_departments';
+  info: {
+    displayName: 'Department';
+  };
+  attributes: {
+    media: Attribute.Media<'images'>;
+    url: Attribute.String;
+  };
+}
+
 export interface ElementsEmployee extends Schema.Component {
   collectionName: 'components_elements_employees';
   info: {
@@ -423,6 +434,7 @@ export interface SectionsClientSection extends Schema.Component {
   attributes: {
     feature: Attribute.Component<'elements.client', true>;
     title: Attribute.String;
+    Department: Attribute.Component<'elements.department', true>;
   };
 }
 
@@ -857,6 +869,7 @@ declare module '@strapi/types' {
       'elements.carousel-media': ElementsCarouselMedia;
       'elements.client': ElementsClient;
       'elements.compy-to-contact': ElementsCompyToContact;
+      'elements.department': ElementsDepartment;
       'elements.employee': ElementsEmployee;
       'elements.feedback': ElementsFeedback;
       'elements.footer-section': ElementsFooterSection;

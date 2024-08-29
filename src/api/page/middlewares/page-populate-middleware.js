@@ -68,6 +68,14 @@ const populate = {
           },
         },
       },
+      Department: {
+        populate: {
+          fields: true,
+          media: {
+            fields: ["url", "alternativeText", "caption", "width", "height"],
+          },
+        },
+      },
       feature: {
         populate: {
           fields: ["title", "description", "showLink", "newTab", "url", "text"],

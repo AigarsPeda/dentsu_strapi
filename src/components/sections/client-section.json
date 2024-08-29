@@ -14,6 +14,12 @@
     },
     "title": {
       "type": "string"
+    },
+    "Department": {
+      "displayName": "Department",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.department"
     }
   }
 }

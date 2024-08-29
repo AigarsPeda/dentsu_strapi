@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_departments",
+  "info": {
+    "displayName": "Department"
+  },
+  "options": {},
+  "attributes": {
+    "media": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "url": {
+      "type": "string"
+    }
+  }
+}
