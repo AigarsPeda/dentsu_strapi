@@ -550,6 +550,7 @@ export interface SectionsInfoBlock extends Schema.Component {
     description: Attribute.Text & Attribute.Required;
     description_2: Attribute.Text;
     description_3: Attribute.Text;
+    animate: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
@@ -714,6 +715,7 @@ export interface SectionsServices extends Schema.Component {
     fontColor: Attribute.Component<'shared.font-color'>;
     mobLogo: Attribute.Media<'images'>;
     isDarkOverlay: Attribute.Boolean & Attribute.DefaultTo<true>;
+    animate: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 

@@ -49,6 +49,10 @@
     "isDarkOverlay": {
       "type": "boolean",
       "default": true
+    },
+    "animate": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
