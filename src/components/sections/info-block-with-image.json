@@ -22,6 +22,10 @@
     "pictureOnRight": {
       "type": "boolean",
       "default": false
+    },
+    "animate": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

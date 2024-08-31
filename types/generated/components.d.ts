@@ -536,6 +536,7 @@ export interface SectionsInfoBlockWithImage extends Schema.Component {
     description: Attribute.Text & Attribute.Required;
     picture: Attribute.Media<'images' | 'videos', true> & Attribute.Required;
     pictureOnRight: Attribute.Boolean & Attribute.DefaultTo<false>;
+    animate: Attribute.Boolean & Attribute.DefaultTo<false>;
   };
 }
 
