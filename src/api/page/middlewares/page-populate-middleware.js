@@ -10,6 +10,9 @@ const populate = {
       picture: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },
+      video: {
+        fields: ["url", "alternativeText", "caption", "width", "height"],
+      },
       poster: {
         fields: ["url", "alternativeText", "caption", "width", "height"],
       },
