@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_sections_pdf_headlines",
+  "info": {
+    "displayName": "PdfHeadline"
+  },
+  "options": {},
+  "attributes": {
+    "Headline": {
+      "type": "text"
+    }
+  }
+}
