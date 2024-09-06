@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * `page-populate-middleware` middleware  dwerw
+ * `page-populate-middleware` middleware
  */
 
 const populate = {
