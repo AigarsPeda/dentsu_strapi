@@ -69,6 +69,14 @@
         }
       },
       "component": "layout.footer"
+    },
+    "GoogleAnalyticsMeasurementId": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }
