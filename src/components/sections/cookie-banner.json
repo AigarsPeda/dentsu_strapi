@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_sections_cookie_banners",
+  "info": {
+    "displayName": "CookieBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "string"
+    },
+    "moreInfoText": {
+      "type": "string"
+    },
+    "moreInfoTextLink": {
+      "type": "string"
+    },
+    "acceptButtonTitle": {
+      "type": "string"
+    },
+    "cookieChoices": {
+      "displayName": "Cookie Choices",
+      "type": "component",
+      "repeatable": true,
+      "component": "sections.cookie-choices"
+    },
+    "manageCookieSettingsTitle": {
+      "type": "string"
+    },
+    "dialogTitle": {
+      "type": "string"
+    },
+    "dialog": {
+      "type": "text"
+    }
+  }
+}

@@ -417,6 +417,12 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
           localized: false;
         };
       }>;
+    CookieBanner: Attribute.Component<'sections.cookie-banner'> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<

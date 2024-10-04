@@ -77,6 +77,17 @@
         }
       },
       "type": "string"
+    },
+    "CookieBanner": {
+      "displayName": "CookieBanner",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.cookie-banner"
     }
   }
 }

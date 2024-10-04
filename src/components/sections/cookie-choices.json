@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_sections_cookie_choices",
+  "info": {
+    "displayName": "Cookie Choices"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "isNonNecessary": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
