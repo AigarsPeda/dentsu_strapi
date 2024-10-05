@@ -7,7 +7,7 @@
   "options": {},
   "attributes": {
     "description": {
-      "type": "string"
+      "type": "text"
     },
     "moreInfoText": {
       "type": "string"

@@ -1,89 +1,5 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
-export interface SharedVideoEmbed extends Schema.Component {
-  collectionName: 'components_sections_video_embeds';
-  info: {
-    displayName: 'Video Embed';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String & Attribute.Required;
-  };
-}
-
-export interface SharedSlider extends Schema.Component {
-  collectionName: 'components_shared_sliders';
-  info: {
-    displayName: 'Slider';
-    icon: 'address-book';
-    description: '';
-  };
-  attributes: {
-    files: Attribute.Media<'images', true>;
-  };
-}
-
-export interface SharedSeo extends Schema.Component {
-  collectionName: 'components_shared_seos';
-  info: {
-    name: 'Seo';
-    icon: 'allergies';
-    displayName: 'Seo';
-    description: '';
-  };
-  attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-    shareImage: Attribute.Media<'images'>;
-  };
-}
-
-export interface SharedRichText extends Schema.Component {
-  collectionName: 'components_shared_rich_texts';
-  info: {
-    displayName: 'Rich text';
-    icon: 'align-justify';
-    description: '';
-  };
-  attributes: {
-    body: Attribute.RichText;
-  };
-}
-
-export interface SharedQuote extends Schema.Component {
-  collectionName: 'components_shared_quotes';
-  info: {
-    displayName: 'Quote';
-    icon: 'indent';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    body: Attribute.Text & Attribute.Required;
-    author: Attribute.String;
-  };
-}
-
-export interface SharedFontColor extends Schema.Component {
-  collectionName: 'components_shared_font_colors';
-  info: {
-    displayName: 'font color';
-  };
-  attributes: {
-    fontColor: Attribute.Enumeration<['light', 'dark']>;
-  };
-}
-
-export interface SharedDescriptionMedia extends Schema.Component {
-  collectionName: 'components_shared_description_medias';
-  info: {
-    displayName: 'Description Media';
-  };
-  attributes: {
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
-  };
-}
-
 export interface MetaMetadata extends Schema.Component {
   collectionName: 'components_meta_metadata';
   info: {
@@ -432,7 +348,7 @@ export interface SectionsCookieBanner extends Schema.Component {
     description: '';
   };
   attributes: {
-    description: Attribute.String;
+    description: Attribute.Text;
     moreInfoText: Attribute.String;
     moreInfoTextLink: Attribute.String;
     acceptButtonTitle: Attribute.String;
@@ -609,6 +525,90 @@ export interface LayoutFooter extends Schema.Component {
     title: Attribute.String;
     copyright: Attribute.String;
     menuLinks: Attribute.Component<'links.link', true>;
+  };
+}
+
+export interface SharedVideoEmbed extends Schema.Component {
+  collectionName: 'components_sections_video_embeds';
+  info: {
+    displayName: 'Video Embed';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface SharedSlider extends Schema.Component {
+  collectionName: 'components_shared_sliders';
+  info: {
+    displayName: 'Slider';
+    icon: 'address-book';
+    description: '';
+  };
+  attributes: {
+    files: Attribute.Media<'images', true>;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    name: 'Seo';
+    icon: 'allergies';
+    displayName: 'Seo';
+    description: '';
+  };
+  attributes: {
+    metaTitle: Attribute.String & Attribute.Required;
+    metaDescription: Attribute.Text & Attribute.Required;
+    shareImage: Attribute.Media<'images'>;
+  };
+}
+
+export interface SharedRichText extends Schema.Component {
+  collectionName: 'components_shared_rich_texts';
+  info: {
+    displayName: 'Rich text';
+    icon: 'align-justify';
+    description: '';
+  };
+  attributes: {
+    body: Attribute.RichText;
+  };
+}
+
+export interface SharedQuote extends Schema.Component {
+  collectionName: 'components_shared_quotes';
+  info: {
+    displayName: 'Quote';
+    icon: 'indent';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    body: Attribute.Text & Attribute.Required;
+    author: Attribute.String;
+  };
+}
+
+export interface SharedFontColor extends Schema.Component {
+  collectionName: 'components_shared_font_colors';
+  info: {
+    displayName: 'font color';
+  };
+  attributes: {
+    fontColor: Attribute.Enumeration<['light', 'dark']>;
+  };
+}
+
+export interface SharedDescriptionMedia extends Schema.Component {
+  collectionName: 'components_shared_description_medias';
+  info: {
+    displayName: 'Description Media';
+  };
+  attributes: {
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -913,13 +913,6 @@ export interface ElementsCarouselMedia extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
-      'shared.video-embed': SharedVideoEmbed;
-      'shared.slider': SharedSlider;
-      'shared.seo': SharedSeo;
-      'shared.rich-text': SharedRichText;
-      'shared.quote': SharedQuote;
-      'shared.font-color': SharedFontColor;
-      'shared.description-media': SharedDescriptionMedia;
       'meta.metadata': MetaMetadata;
       'sections.work-headline-with-image': SectionsWorkHeadlineWithImage;
       'sections.vacancies': SectionsVacancies;
@@ -959,6 +952,13 @@ declare module '@strapi/types' {
       'layout.navbar': LayoutNavbar;
       'layout.logo': LayoutLogo;
       'layout.footer': LayoutFooter;
+      'shared.video-embed': SharedVideoEmbed;
+      'shared.slider': SharedSlider;
+      'shared.seo': SharedSeo;
+      'shared.rich-text': SharedRichText;
+      'shared.quote': SharedQuote;
+      'shared.font-color': SharedFontColor;
+      'shared.description-media': SharedDescriptionMedia;
       'elements.vacancies': ElementsVacancies;
       'elements.testing': ElementsTesting;
       'elements.testimonial': ElementsTestimonial;
