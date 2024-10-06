@@ -1,5 +1,89 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface SharedVideoEmbed extends Schema.Component {
+  collectionName: 'components_sections_video_embeds';
+  info: {
+    displayName: 'Video Embed';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface SharedSlider extends Schema.Component {
+  collectionName: 'components_shared_sliders';
+  info: {
+    displayName: 'Slider';
+    icon: 'address-book';
+    description: '';
+  };
+  attributes: {
+    files: Attribute.Media<'images', true>;
+  };
+}
+
+export interface SharedSeo extends Schema.Component {
+  collectionName: 'components_shared_seos';
+  info: {
+    name: 'Seo';
+    icon: 'allergies';
+    displayName: 'Seo';
+    description: '';
+  };
+  attributes: {
+    metaTitle: Attribute.String & Attribute.Required;
+    metaDescription: Attribute.Text & Attribute.Required;
+    shareImage: Attribute.Media<'images'>;
+  };
+}
+
+export interface SharedRichText extends Schema.Component {
+  collectionName: 'components_shared_rich_texts';
+  info: {
+    displayName: 'Rich text';
+    icon: 'align-justify';
+    description: '';
+  };
+  attributes: {
+    body: Attribute.RichText;
+  };
+}
+
+export interface SharedQuote extends Schema.Component {
+  collectionName: 'components_shared_quotes';
+  info: {
+    displayName: 'Quote';
+    icon: 'indent';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    body: Attribute.Text & Attribute.Required;
+    author: Attribute.String;
+  };
+}
+
+export interface SharedFontColor extends Schema.Component {
+  collectionName: 'components_shared_font_colors';
+  info: {
+    displayName: 'font color';
+  };
+  attributes: {
+    fontColor: Attribute.Enumeration<['light', 'dark']>;
+  };
+}
+
+export interface SharedDescriptionMedia extends Schema.Component {
+  collectionName: 'components_shared_description_medias';
+  info: {
+    displayName: 'Description Media';
+  };
+  attributes: {
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 export interface MetaMetadata extends Schema.Component {
   collectionName: 'components_meta_metadata';
   info: {
@@ -11,6 +95,75 @@ export interface MetaMetadata extends Schema.Component {
   attributes: {
     metaTitle: Attribute.String & Attribute.Required;
     metaDescription: Attribute.Text & Attribute.Required;
+  };
+}
+
+export interface LinksSocialLink extends Schema.Component {
+  collectionName: 'components_links_social_links';
+  info: {
+    displayName: 'Social Link';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String & Attribute.Required;
+    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
+    text: Attribute.String & Attribute.Required;
+    social: Attribute.Enumeration<
+      [
+        'YOUTUBE',
+        'TWITTER',
+        'DISCORD',
+        'WEBSITE',
+        'FACEBOOK',
+        'INSTAGRAM',
+        'LINKEDIN'
+      ]
+    >;
+  };
+}
+
+export interface LinksLink extends Schema.Component {
+  collectionName: 'components_links_links';
+  info: {
+    name: 'Link';
+    displayName: 'Link';
+    icon: 'link';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String & Attribute.Required;
+    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
+    text: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface LinksButton extends Schema.Component {
+  collectionName: 'components_links_simple_buttons';
+  info: {
+    name: 'Button';
+    displayName: 'Button';
+    icon: 'fingerprint';
+    description: '';
+  };
+  attributes: {
+    text: Attribute.String;
+    type: Attribute.Enumeration<['primary', 'secondary', 'callToAction']>;
+  };
+}
+
+export interface LinksButtonLink extends Schema.Component {
+  collectionName: 'components_links_buttons';
+  info: {
+    name: 'Button-link';
+    displayName: 'Button link';
+    icon: 'fingerprint';
+    description: '';
+  };
+  attributes: {
+    url: Attribute.String;
+    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
+    text: Attribute.String;
+    type: Attribute.Enumeration<['primary', 'secondary', 'callToAction']>;
   };
 }
 
@@ -237,6 +390,18 @@ export interface SectionsNewsPostSection extends Schema.Component {
   };
 }
 
+export interface SectionsNecessaryCookie extends Schema.Component {
+  collectionName: 'components_sections_necessary_cookies';
+  info: {
+    displayName: 'NecessaryCookie';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+  };
+}
+
 export interface SectionsLogosSection extends Schema.Component {
   collectionName: 'components_sections_logos_sections';
   info: {
@@ -329,15 +494,28 @@ export interface SectionsCustomerFeedback extends Schema.Component {
   };
 }
 
-export interface SectionsCookieChoices extends Schema.Component {
-  collectionName: 'components_sections_cookie_choices';
+export interface SectionsCookie extends Schema.Component {
+  collectionName: 'components_sections_cookies';
   info: {
-    displayName: 'Cookie Choices';
+    displayName: 'cookie';
   };
   attributes: {
     title: Attribute.String;
     description: Attribute.Text;
-    isNonNecessary: Attribute.Boolean & Attribute.DefaultTo<true>;
+    isNecessary: Attribute.Boolean & Attribute.DefaultTo<false>;
+  };
+}
+
+export interface SectionsCookieChoices extends Schema.Component {
+  collectionName: 'components_sections_cookie_choices';
+  info: {
+    displayName: 'Cookie Choices';
+    description: '';
+  };
+  attributes: {
+    title: Attribute.String;
+    description: Attribute.Text;
+    isNecessary: Attribute.Boolean & Attribute.DefaultTo<true>;
   };
 }
 
@@ -415,75 +593,6 @@ export interface SectionsClientSection extends Schema.Component {
   };
 }
 
-export interface LinksSocialLink extends Schema.Component {
-  collectionName: 'components_links_social_links';
-  info: {
-    displayName: 'Social Link';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String & Attribute.Required;
-    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
-    text: Attribute.String & Attribute.Required;
-    social: Attribute.Enumeration<
-      [
-        'YOUTUBE',
-        'TWITTER',
-        'DISCORD',
-        'WEBSITE',
-        'FACEBOOK',
-        'INSTAGRAM',
-        'LINKEDIN'
-      ]
-    >;
-  };
-}
-
-export interface LinksLink extends Schema.Component {
-  collectionName: 'components_links_links';
-  info: {
-    name: 'Link';
-    displayName: 'Link';
-    icon: 'link';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String & Attribute.Required;
-    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
-    text: Attribute.String & Attribute.Required;
-  };
-}
-
-export interface LinksButton extends Schema.Component {
-  collectionName: 'components_links_simple_buttons';
-  info: {
-    name: 'Button';
-    displayName: 'Button';
-    icon: 'fingerprint';
-    description: '';
-  };
-  attributes: {
-    text: Attribute.String;
-    type: Attribute.Enumeration<['primary', 'secondary', 'callToAction']>;
-  };
-}
-
-export interface LinksButtonLink extends Schema.Component {
-  collectionName: 'components_links_buttons';
-  info: {
-    name: 'Button-link';
-    displayName: 'Button link';
-    icon: 'fingerprint';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String;
-    newTab: Attribute.Boolean & Attribute.DefaultTo<false>;
-    text: Attribute.String;
-    type: Attribute.Enumeration<['primary', 'secondary', 'callToAction']>;
-  };
-}
-
 export interface LayoutNavbar extends Schema.Component {
   collectionName: 'components_layout_navbars';
   info: {
@@ -525,90 +634,6 @@ export interface LayoutFooter extends Schema.Component {
     title: Attribute.String;
     copyright: Attribute.String;
     menuLinks: Attribute.Component<'links.link', true>;
-  };
-}
-
-export interface SharedVideoEmbed extends Schema.Component {
-  collectionName: 'components_sections_video_embeds';
-  info: {
-    displayName: 'Video Embed';
-    description: '';
-  };
-  attributes: {
-    url: Attribute.String & Attribute.Required;
-  };
-}
-
-export interface SharedSlider extends Schema.Component {
-  collectionName: 'components_shared_sliders';
-  info: {
-    displayName: 'Slider';
-    icon: 'address-book';
-    description: '';
-  };
-  attributes: {
-    files: Attribute.Media<'images', true>;
-  };
-}
-
-export interface SharedSeo extends Schema.Component {
-  collectionName: 'components_shared_seos';
-  info: {
-    name: 'Seo';
-    icon: 'allergies';
-    displayName: 'Seo';
-    description: '';
-  };
-  attributes: {
-    metaTitle: Attribute.String & Attribute.Required;
-    metaDescription: Attribute.Text & Attribute.Required;
-    shareImage: Attribute.Media<'images'>;
-  };
-}
-
-export interface SharedRichText extends Schema.Component {
-  collectionName: 'components_shared_rich_texts';
-  info: {
-    displayName: 'Rich text';
-    icon: 'align-justify';
-    description: '';
-  };
-  attributes: {
-    body: Attribute.RichText;
-  };
-}
-
-export interface SharedQuote extends Schema.Component {
-  collectionName: 'components_shared_quotes';
-  info: {
-    displayName: 'Quote';
-    icon: 'indent';
-    description: '';
-  };
-  attributes: {
-    title: Attribute.String;
-    body: Attribute.Text & Attribute.Required;
-    author: Attribute.String;
-  };
-}
-
-export interface SharedFontColor extends Schema.Component {
-  collectionName: 'components_shared_font_colors';
-  info: {
-    displayName: 'font color';
-  };
-  attributes: {
-    fontColor: Attribute.Enumeration<['light', 'dark']>;
-  };
-}
-
-export interface SharedDescriptionMedia extends Schema.Component {
-  collectionName: 'components_shared_description_medias';
-  info: {
-    displayName: 'Description Media';
-  };
-  attributes: {
-    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
   };
 }
 
@@ -913,7 +938,18 @@ export interface ElementsCarouselMedia extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'shared.video-embed': SharedVideoEmbed;
+      'shared.slider': SharedSlider;
+      'shared.seo': SharedSeo;
+      'shared.rich-text': SharedRichText;
+      'shared.quote': SharedQuote;
+      'shared.font-color': SharedFontColor;
+      'shared.description-media': SharedDescriptionMedia;
       'meta.metadata': MetaMetadata;
+      'links.social-link': LinksSocialLink;
+      'links.link': LinksLink;
+      'links.button': LinksButton;
+      'links.button-link': LinksButtonLink;
       'sections.work-headline-with-image': SectionsWorkHeadlineWithImage;
       'sections.vacancies': SectionsVacancies;
       'sections.vacancies-headline': SectionsVacanciesHeadline;
@@ -933,6 +969,7 @@ declare module '@strapi/types' {
       'sections.page-title': SectionsPageTitle;
       'sections.news-post-title': SectionsNewsPostTitle;
       'sections.news-post-section': SectionsNewsPostSection;
+      'sections.necessary-cookie': SectionsNecessaryCookie;
       'sections.logos-section': SectionsLogosSection;
       'sections.info-block': SectionsInfoBlock;
       'sections.info-block-with-image': SectionsInfoBlockWithImage;
@@ -940,25 +977,15 @@ declare module '@strapi/types' {
       'sections.hero-large-section': SectionsHeroLargeSection;
       'sections.full-width-image': SectionsFullWidthImage;
       'sections.customer-feedback': SectionsCustomerFeedback;
+      'sections.cookie': SectionsCookie;
       'sections.cookie-choices': SectionsCookieChoices;
       'sections.cookie-banner': SectionsCookieBanner;
       'sections.contacts': SectionsContacts;
       'sections.contact-us': SectionsContactUs;
       'sections.client-section': SectionsClientSection;
-      'links.social-link': LinksSocialLink;
-      'links.link': LinksLink;
-      'links.button': LinksButton;
-      'links.button-link': LinksButtonLink;
       'layout.navbar': LayoutNavbar;
       'layout.logo': LayoutLogo;
       'layout.footer': LayoutFooter;
-      'shared.video-embed': SharedVideoEmbed;
-      'shared.slider': SharedSlider;
-      'shared.seo': SharedSeo;
-      'shared.rich-text': SharedRichText;
-      'shared.quote': SharedQuote;
-      'shared.font-color': SharedFontColor;
-      'shared.description-media': SharedDescriptionMedia;
       'elements.vacancies': ElementsVacancies;
       'elements.testing': ElementsTesting;
       'elements.testimonial': ElementsTestimonial;

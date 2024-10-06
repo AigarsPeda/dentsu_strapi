@@ -1,7 +1,7 @@
 {
-  "collectionName": "components_sections_cookie_choices",
+  "collectionName": "components_sections_necessary_cookies",
   "info": {
-    "displayName": "Cookie Choices",
+    "displayName": "NecessaryCookie",
     "description": ""
   },
   "options": {},
@@ -11,10 +11,6 @@
     },
     "description": {
       "type": "text"
-    },
-    "isNecessary": {
-      "type": "boolean",
-      "default": true
     }
   }
 }

@@ -1,8 +1,7 @@
 {
-  "collectionName": "components_sections_cookie_choices",
+  "collectionName": "components_sections_cookies",
   "info": {
-    "displayName": "Cookie Choices",
-    "description": ""
+    "displayName": "cookie"
   },
   "options": {},
   "attributes": {
@@ -14,7 +13,7 @@
     },
     "isNecessary": {
       "type": "boolean",
-      "default": true
+      "default": false
     }
   }
 }
