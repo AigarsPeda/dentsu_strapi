@@ -12,12 +12,11 @@ module.exports = ({ env }) => ({
     },
     pool: {
       min: 0,
-      max: 10,
-      acquireTimeoutMillis: 600000,
+      max: 5, // Even more conservative
+      propagateCreateError: false, // Add this line
+      acquireTimeoutMillis: 900000, // Increased timeout
       createTimeoutMillis: 300000,
       idleTimeoutMillis: 300000,
-      reapIntervalMillis: 1000,
-      createRetryIntervalMillis: 2000,
     },
     useNullAsDefault: true,
   },
