@@ -9,10 +9,5 @@ module.exports = ({ env }) => ({
     token: {
       salt: env("TRANSFER_TOKEN_SALT"),
     },
-    throttle: {
-      enabled: true,
-      concurrent: 2,
-      interval: 500,
-    },
   },
 });
