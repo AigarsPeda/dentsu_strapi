@@ -4,7 +4,7 @@ module.exports = {
       // Reduce number of concurrent operations
       concurrent: 2,
       // Add delay between batches (in milliseconds)
-      interval: 500,
+      interval: 10000,
     },
     // Smaller batch size for processing
     batch: {
@@ -20,7 +20,7 @@ module.exports = {
       },
       // Add delay between asset transfers (in milliseconds)
       throttle: {
-        interval: 1000,
+        interval: 10000,
       },
     },
   },
