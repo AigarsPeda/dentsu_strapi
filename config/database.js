@@ -10,14 +10,6 @@ module.exports = ({ env }) => ({
         env("DATABASE_FILENAME", ".tmp/data.db")
       ),
     },
-    pool: {
-      min: 2,
-      max: 20,
-      acquireTimeoutMillis: 600000,
-      createTimeoutMillis: 300000,
-      idleTimeoutMillis: 300000,
-      propagateCreateError: false,
-    },
     useNullAsDefault: true,
   },
 });
