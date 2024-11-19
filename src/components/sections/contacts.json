@@ -26,10 +26,6 @@
       "type": "string",
       "required": true
     },
-    "leadFormEmail": {
-      "type": "string",
-      "required": true
-    },
     "companyToContact": {
       "displayName": "compyToContact",
       "type": "component",
