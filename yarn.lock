@@ -9194,10 +9194,10 @@ statuses@2.0.1, statuses@^2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-1.5.0.tgz#161c7dac177659fd9811f43771fa99381478628c"
   integrity sha512-OpZ3zP+jT1PI7I8nemJX4AKmAX070ZkYPVWV/AaKTJl+tXCTGyVdC1a4SL8RUQYEwk/f34ZX8UTykN68FwrqAA==
 
-strapi-plugin-sitemap@^3.1.1:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/strapi-plugin-sitemap/-/strapi-plugin-sitemap-3.2.0.tgz#d9417b053dae02bb7bb5e7824cacd96e143e2f06"
-  integrity sha512-Cc4Vsci61nKR9BMM8JGANQOziXsLTdLBV2/1bY089wI2B/rF7k+OBJs6+Z9dbQQ04z2cR395lf750romBJbMgQ==
+strapi-plugin-sitemap@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/strapi-plugin-sitemap/-/strapi-plugin-sitemap-3.2.1.tgz#a3678802a1bac9e668f7bd7bba49b8b2593b9233"
+  integrity sha512-+7xy8/gUyynWb5UMP+l3NZ1W/ZghVkonJ8DvusCBINEb1/Xf4MWJgqDnSfJI1vK3Pb8RRn6L1YIB3Ql63Hx/Tg==
   dependencies:
     chalk "^4.1.2"
     commander "^8.3.0"
