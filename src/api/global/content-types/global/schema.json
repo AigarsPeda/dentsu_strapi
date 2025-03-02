@@ -88,6 +88,22 @@
         }
       },
       "component": "sections.cookie-banner"
+    },
+    "GoogleSiteVerification": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
+    },
+    "GoogleTagManagerID": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string"
     }
   }
 }

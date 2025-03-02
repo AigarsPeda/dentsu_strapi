@@ -423,6 +423,18 @@ export interface ApiGlobalGlobal extends Schema.SingleType {
           localized: true;
         };
       }>;
+    GoogleSiteVerification: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    GoogleTagManagerID: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
