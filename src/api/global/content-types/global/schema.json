@@ -103,6 +103,19 @@
       }
     },
     "favicon_96x96": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ],
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "favicon_svg": {
       "allowedTypes": [
         "images"
       ],
