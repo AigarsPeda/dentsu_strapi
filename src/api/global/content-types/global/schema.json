@@ -104,6 +104,17 @@
         }
       },
       "type": "string"
+    },
+    "emailsettings": {
+      "displayName": "email-settings",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "sections.email-settings"
     }
   }
 }

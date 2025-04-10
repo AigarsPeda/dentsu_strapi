@@ -125,6 +125,11 @@ const populate = {
       submitButton: {
         populate: true,
       },
+      emailsettings: {
+        populate: {
+          fields: ["host", "password", "email"],
+        },
+      },
     },
   },
   seo: {

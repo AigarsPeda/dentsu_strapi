@@ -415,6 +415,19 @@ export interface SectionsFullWidthImage extends Schema.Component {
   };
 }
 
+export interface SectionsEmailSettings extends Schema.Component {
+  collectionName: 'components_sections_email_settings';
+  info: {
+    displayName: 'email-settings';
+    description: '';
+  };
+  attributes: {
+    email: Attribute.String & Attribute.Required;
+    password: Attribute.String & Attribute.Required;
+    host: Attribute.String & Attribute.Required;
+  };
+}
+
 export interface SectionsCustomerFeedback extends Schema.Component {
   collectionName: 'components_sections_customer_feedbacks';
   info: {
@@ -973,6 +986,7 @@ declare module '@strapi/types' {
       'sections.image-carousel': SectionsImageCarousel;
       'sections.hero-large-section': SectionsHeroLargeSection;
       'sections.full-width-image': SectionsFullWidthImage;
+      'sections.email-settings': SectionsEmailSettings;
       'sections.customer-feedback': SectionsCustomerFeedback;
       'sections.cookie': SectionsCookie;
       'sections.cookie-choices': SectionsCookieChoices;
