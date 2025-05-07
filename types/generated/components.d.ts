@@ -423,8 +423,6 @@ export interface SectionsEmailSettings extends Schema.Component {
   };
   attributes: {
     email: Attribute.String & Attribute.Required;
-    password: Attribute.String & Attribute.Required;
-    host: Attribute.String & Attribute.Required;
   };
 }
 

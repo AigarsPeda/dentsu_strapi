@@ -9,14 +9,6 @@
     "email": {
       "type": "string",
       "required": true
-    },
-    "password": {
-      "type": "string",
-      "required": true
-    },
-    "host": {
-      "type": "string",
-      "required": true
     }
   }
 }
