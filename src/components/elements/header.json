@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_elements_headers",
+  "info": {
+    "displayName": "Header"
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "Title": {
+      "type": "text"
+    }
+  }
+}

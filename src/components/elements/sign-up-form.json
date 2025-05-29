@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_elements_sign_up_forms",
+  "info": {
+    "displayName": "Sign up form",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Field": {
+      "displayName": "Field",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.field"
+    },
+    "Recipient": {
+      "type": "string",
+      "required": true
+    },
+    "Header": {
+      "displayName": "Header",
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.header"
+    },
+    "Subject": {
+      "type": "string",
+      "required": true
+    },
+    "ButtonTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

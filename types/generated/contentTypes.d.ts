@@ -520,7 +520,8 @@ export interface ApiPagePage extends Schema.CollectionType {
         'sections.vacancies-headline',
         'sections.vacancies',
         'sections.post-title',
-        'sections.pdf'
+        'sections.pdf',
+        'elements.sign-up-form'
       ]
     > &
       Attribute.SetPluginOptions<{

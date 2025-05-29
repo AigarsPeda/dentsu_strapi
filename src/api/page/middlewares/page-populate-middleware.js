@@ -130,6 +130,23 @@ const populate = {
           fields: ["host", "password", "email"],
         },
       },
+      Image: {
+        populate: true,
+      },
+      Field: { populate: true },
+      Header: { populate: ["Image", "Title"] },
+      "sign-up-form": {
+        populate: {
+          Recipient: true,
+          Header: { populate: true },
+        },
+      },
+      Subject: {
+        populate: true,
+      },
+      ButtonTitle: {
+        populate: true,
+      },
     },
   },
   seo: {

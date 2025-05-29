@@ -55,7 +55,8 @@
         "sections.vacancies-headline",
         "sections.vacancies",
         "sections.post-title",
-        "sections.pdf"
+        "sections.pdf",
+        "elements.sign-up-form"
       ],
       "pluginOptions": {
         "i18n": {
@@ -70,7 +71,7 @@
         }
       },
       "type": "string",
-      "regex": "^$|^[a-zA-Z/_-]+$"
+      "regex": "^$|^[a-zA-Z0-9/_-]+$"
     },
     "heading": {
       "pluginOptions": {

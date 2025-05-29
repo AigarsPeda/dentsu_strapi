@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_field_s",
+  "info": {
+    "displayName": "Field",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Required": {
+      "type": "boolean",
+      "default": false
+    },
+    "Type": {
+      "type": "enumeration",
+      "enum": [
+        "email",
+        "phone",
+        "number",
+        "text"
+      ]
+    }
+  }
+}
